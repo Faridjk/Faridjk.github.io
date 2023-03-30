@@ -4,22 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <title>Git - Downloading Package</title>
     <link rel="icon" href="git.ico.png">
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
         body{
             background: #EEEEE6;
         }
         .header{
-            height: 106px;
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
         }
         .group1{
             display: flex;
@@ -111,9 +106,6 @@
         .right>h4{
             margin: 20px 0;
         }
-        /* .right>p{
-            color: #4E443C;
-        } */
         .p{
             color: #F14E32;
             margin-top: 10px;
@@ -130,7 +122,6 @@
             height: 137px;
             width: 137px;
             background-size: cover;
-            margin-left: 25px;
             margin-bottom: 20px;
         }
         .image1{
@@ -157,52 +148,40 @@
             margin: 50px 0;
         }
         .footer{
-            height: 92px;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
             border-top: 1px solid #ccc;
-            margin-top: 50px;
         }
-        .leftside{
-            width: 45%;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
+        @media (max-width:1300px) {
+            .group1{
+                width: 100%;
+            }
+            .group2{
+                width: 100%;
+            }
+            .right{
+                width: 100%;
+            }
+            .left{
+                display: none;
+            }
+            .division{
+                width: 100%;
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .div>.image , h3, p{
+                width: 100%;
+            }
         }
-        .rightside{
-            width:45%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: end;
-            padding: 20px 120px 0 0;
-            font-size: 12px;
-        }
-        .first{
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            width: 10%;
-        }
-        .sekil{
-            background-image: url("https://git-scm.com/images/icons/code.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 50px;
-            height: 30px;
-        }
-        .leftside>p{
-            width: 100%;
-        } 
     </style>
 </head>
 <body>
     <div class="header">
-        <div class="group1">
+        <div class="group1 my-3">
             <div class="img"></div>
             <span>--fast-version-control</span>
         </div>
-        <div class="group2">
+        <div class="group2 my-3">
             <label for="top">
                 <input type="text" id="top" placeholder="Search entire site...">
             </label>
@@ -253,17 +232,25 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="first">
-            <div class="sekil"></div>
+    <div class="d-flex justify-content-center mt-4">
+        <div class="footer d-flex justify-content-between align-items-center w-75 flex-wrap">
+        <div class="d-flex align-items-center">
+            <div class="mx-3">
+                <img src="https://git-scm.com/images/icons/code.png" alt="" height="40%">
+            </div>
+            <div>
+                <span class="text-dark">About this site</span><br>
+                <span class="text-dark">Patches, suggestions, and comments are welcome</span> 
+            </div>
+            
         </div>
-        <div class="leftside">
-            <a href="#">About this site</a>
-            <p>Patches, suggestions, and comments are welcome</p>
-        </div>
-        <div class="rightside">
-            <span>Git is a member of <strong>Software Freedom Conservancy</strong> </span>
+        
+        <div>
+            <span class="text-dark">Git is a member of <strong>Software Freedom Conservancy</strong> </span>
         </div>
     </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>
